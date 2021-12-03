@@ -3,7 +3,7 @@
     "displayName": "Babylon.js Snippets",
     "publisher": "edibotopic",
     "description": "JavaSscript and HTML snippets for Babylon.js projects.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "icon": "images/icon.png",
     "galleryBanner": {
         "theme": "dark",
@@ -25,7 +25,7 @@
     "bugs": {
         "url": "https://github.com/edibotopic/babylonjs-snippets/issues",
         "email": "edibotopic@gmail.com"
-      },
+    },
     "license": "MIT",
     "contributes": {
         "snippets": [
