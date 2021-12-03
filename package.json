@@ -4,13 +4,27 @@
     "description": "JavaSscript and HTML snippets for Babylon.js projects.",
     "version": "1.0.0",
     "icon": "images/icon.png",
-    "author": "edibotopic",
+    "galleryBanner": {
+        "theme": "dark"
+    },
+    "author": {
+        "name": "edibotopic"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/edibotopic/babylonjs-snippets"
+    },
     "engines": {
         "vscode": "^1.62.0"
     },
     "categories": [
         "Snippets"
     ],
+    "bugs": {
+        "url": "https://github.com/edibotopic/babylonjs-snippets/issues",
+        "email": "edibotopic@gmail.com"
+      },
+    "license": "MIT",
     "contributes": {
         "snippets": [
             {
