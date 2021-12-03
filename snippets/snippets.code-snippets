@@ -1,0 +1,248 @@
+{
+    //javascript snippets
+    "Create a sphere": {
+        "prefix": ["sphere"],
+        "body": ["var sphere = BABYLON.MeshBuilder.CreateSphere(\"${1:sphere}\", {diameter: ${2:1}}, scene);"],
+        "description": "Creates a spherical mesh.",
+        "scope": "javascript"
+    },
+
+    "Create a box": {
+        "prefix": ["box"],
+        "body": ["var box = BABYLON.MeshBuilder.CreateBox(\"${1:box}\", {size: ${2:1}}, scene);"],
+        "description": "Creates a box mesh.",
+        "scope": "javascript"
+    },
+
+    "Load CPU Particle System from Snippet Server": {
+        "prefix": ["CPU particles"],
+        "body": ["BABYLON.ParticleHelper.CreateFromSnippetAsync(\"${1:your_snippet_url_no_#}\", scene, false).then(system => {\n\n});"],
+        "description": "Load CPU Particle System from Snippet Server",
+        "scope": "javascript"
+    },
+
+    "Load GPU Particle System from Snippet Server": {
+        "prefix": ["GPU particles"],
+        "body": ["BABYLON.ParticleHelper.CreateFromSnippetAsync(\"${1:your_snippet_url_no_#}\", scene, true).then(system => {\n\n});"],
+        "description": "Load GPU Particle System from Snippet Server",
+        "scope": "javascript"
+    },
+
+    "Create a cylinder": {
+        "prefix": ["cylinder"],
+        "body": ["var cylinder = BABYLON.MeshBuilder.CreateCylinder(\"${1:cylinder}\", {height: ${2:2}, diameter: ${3:1}}, scene);"],
+        "description": "Creates a cylindrical mesh.",
+        "scope": "javascript"
+    },
+
+    "Create a ground plane": {
+        "prefix": ["ground"],
+        "body": ["var ground = BABYLON.MeshBuilder.CreateGround(\"${1:ground}\", {width: ${2:6}, height: ${3:6}}, scene);"],
+        "description": "Creates a ground plane",
+        "scope": "javascript"
+    },
+
+    "Create a point light": {
+        "prefix": ["point"],
+        "body": ["var pointLight = new BABYLON.PointLight(\"${1:pointLight}\", new BABYLON.Vector3(${2:0},${3:5},${4:0}), scene);"],
+        "description": "Creates a point light",
+        "scope": "javascript"
+    },
+
+    "Create a directional light": {
+        "prefix": ["Directional"],
+        "body": ["var dirLight = new BABYLON.DirectionalLight(\"${1:dirLight}\", new BABYLON.Vector3(${2:0.25},${3:-1},${4:-0.25}), scene);"],
+        "description": "Creates a directional light",
+        "scope": "javascript"
+    },
+
+    "Create a spot light": {
+        "prefix": ["Spot"],
+        "body": ["var spotLight = new BABYLON.SpotLight(\"${1:spotLight}\", new BABYLON.Vector3(${2:0}, ${3:30}, ${4:-10}), new BABYLON.Vector3(${5:0}, ${6:-1}, ${7:0}), ${8:Math.PI / 3}, ${9:2}, scene);"],
+        "description": "Creates a spot light",
+        "scope": "javascript"
+    },
+
+    "Create a hemispheric light": {
+        "prefix": ["hemispheric"],
+        "body": ["var hemiLight = new BABYLON.HemisphericLight(\"${1:hemiLight}\", new BABYLON.Vector3(${2:0}, ${3:1}, ${4:0}), scene);"],
+        "description": "Creates a hemispheric light",
+        "scope": "javascript"
+    },
+
+    "Load a Node Material from snippet w/callback": {
+        "prefix": ["node material"],
+        "body": ["BABYLON.NodeMaterial.ParseFromSnippetAsync(\"${1:your_snippet_url_no_#}\", scene).then(nodeMaterial => {\n     ${2:mesh_to_apply_node_material_to}.material = nodeMaterial;\n});"],
+        "description": "Loads a node material from the snippet server",
+        "scope": "javascript"
+    },
+
+    "Load a fullscreen GUI from the snippet server": {
+        "prefix": ["GUI load"],
+        "body": ["let advancedTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateFullscreenUI(\"${1:name}\", true, scene);\nlet loadedGUI = advancedTexture.parseFromSnippetAsync(\"${2:your_snippet_url_no_#}\");"],
+        "description": "Loads a fullscreen GUI from the snippet server",
+        "scope": "javascript"
+    },
+
+    "Project a GUI from the snippet server onto a mesh": {
+        "prefix": ["GUI project"],
+        "body": ["let guiTexture = BABYLON.GUI.AdvancedDynamicTexture.CreateForMesh(\"${1:mesh to project onto}\", 1024, 1024);\nawait guiTexture.parseFromSnippetAsync(\"${2:your_snippet_url_no_#}\");"],
+        "description": "Projects a GUI from the snippet server onto a mesh",
+        "scope": "javascript"
+    },
+
+    "Show the Inspector": {
+        "prefix": ["inspect"],
+        "body": ["scene.debugLayer.show({\n     embedMode:true\n});"],
+        "description": "Show the inspector for debugging",
+        "scope": "javascript"
+    },
+
+    "Create an Arc Rotate Camera w/Degrees": {
+        "prefix": ["arc rotate degs"],
+        "body": ["var camera = new BABYLON.ArcRotateCamera(\"${1:camera}\", BABYLON.Tools.ToRadians(${2:90}), BABYLON.Tools.ToRadians(${3:65}), ${4:10}, ${5:BABYLON.Vector3.Zero()}, scene);"],
+        "description": "Creates an arc rotate camera with degrees",
+        "scope": "javascript"
+    },
+
+    "Create an Arc Rotate Camera w/Radians": {
+        "prefix": ["arc rotate rads"],
+        "body": ["var camera = new BABYLON.ArcRotateCamera(\"${1:camera}\", ${2:0}, ${3:Math.PI/2}, ${4:10}, ${5:BABYLON.Vector3.Zero()}, scene);"],
+        "description": "Creates an arc rotate camera with radians",
+        "scope": "javascript"
+    },
+
+    "Create a WebXR Camera": {
+        "prefix": ["webxr"],
+        "body": ["scene.createDefaultXRExperienceAsync({}).then((defaultXRExperience) => {\n    ${1}\n});"],
+        "description": "Creates a web XR camera",
+        "scope": "javascript"
+    },
+
+    "Import a Mesh w/callback": {
+        "prefix": ["Mesh callback"],
+        "body": ["BABYLON.SceneLoader.ImportMesh(\"${1:meshName}\", \"${2:url to the mesh parent directory}\", \"${3:Mesh filename.fileextension}\", scene, function(newMeshes){\n\n});"],
+        "description": "Creates a mesh with callback",
+        "scope": "javascript"
+    },
+
+    "Setup a shadow generator": {
+        "prefix": ["Shadow"],
+        "body": ["var shadowGenerator = new BABYLON.ShadowGenerator(${1:size}, ${2:the_light_source});\nshadowGenerator.getShadowMap().renderList.push(${3:the_mesh_that_casts_a_shadow});\n${4:mesh_that_receives_the_shadow}.receiveShadows = true;"],
+        "description": "Creates a shadow generator",
+        "scope": "javascript"
+    },
+
+    "Export scene to GLB": {
+        "prefix": ["glb", "export"],
+        "body": ["BABYLON.GLTF2Export.GLBAsync(scene, \"${1:fileName}\").then((glb) => {\n     glb.downloadFiles();\n});"],
+        "description": "Exports scene to GLB",
+        "scope": "javascript"
+    },
+
+    "Export scene to GLTF": {
+        "prefix": ["gltf", "export"],
+        "body": ["BABYLON.GLTF2Export.GLTFAsync(scene, \"${1:fileName}\").then((gltf) => {\n     gltf.downloadFiles();\n});"],
+        "description": "Exports scene to GLTF",
+        "scope": "javascript"
+    },
+
+    "Create a default scene": {//check this works with index.html
+        "prefix": ["JS scene"],
+        "body": [
+            "const canvas = document.getElementById(\"renderCanvas\");",
+            "const engine = new BABYLON.Engine(canvas,true);",
+            "var createScene = function () {",
+                "// This creates a basic Babylon Scene object (non-mesh)",
+                "var scene = new BABYLON.Scene(engine);",
+            "",
+                "// This creates and positions a free camera (non-mesh)",
+                "var camera = new BABYLON.FreeCamera(\"camera1\", new BABYLON.Vector3(0, 5, -10), scene);",
+            "",
+                "// This targets the camera to scene origin",
+                "camera.setTarget(BABYLON.Vector3.Zero());",
+            "",
+                "// This attaches the camera to the canvas",
+                "camera.attachControl(canvas, true);",
+            "",
+                "// This creates a light, aiming 0,1,0 - to the sky (non-mesh)",
+                "var light = new BABYLON.HemisphericLight(\"light\", new BABYLON.Vector3(0, 1, 0), scene);",
+            "",
+                "// Default intensity is 1. Let's dim the light a small amount",
+                "light.intensity = 0.7;",
+            "",
+                "// Our built-in 'sphere' shape.",
+                "var sphere = BABYLON.MeshBuilder.CreateSphere(\"sphere\", {diameter: 2, segments: 32}, scene);",
+            "",
+                "// Move the sphere upward 1/2 its height",
+                "sphere.position.y = 1;",
+            "",
+                "// Our built-in 'ground' shape.",
+                "var ground = BABYLON.MeshBuilder.CreateGround(\"ground\", {width: 6, height: 6}, scene);",
+            "",
+                "return scene;",
+            "};",
+            "",
+            "const scene = createScene();",
+            "",
+            "engine.runRenderLoop(function () {",
+            "    scene.render();",
+            "}",
+            ");",
+
+            "window.addEventListener(\"resize\", function () {",
+            "    engine.resize();",
+            "}",
+            ");",
+        ],
+        "description": "Creates a default scene with meshes, lights and camera",
+        "scope": "javascript"
+    },
+
+    //html snippets
+    "Create html skeleton": {
+        "prefix": ["HTML scene"],
+        "body": [
+
+            "<!DOCTYPE html>",
+            "<html lang=\"en\">",
+            "<head>",
+            "    <meta charset=\"UTF-8\">",
+            "    <meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+            "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">",
+            "    <title>My Babylon.js App</title>",
+            "",
+            "    <style>",
+            "        html, body {",
+            "            overflow: hidden;",
+            "            width: 100%;",
+            "            height: 100%;",
+            "            margin: 0;",
+            "            padding: 0;",
+            "        }",
+            "",
+            "        #renderCanvas {",
+            "            width: 100%;",
+            "            height: 100%;",
+            "            touch-action: none;",
+            "        }",
+            "    </style>",
+            "",
+            "</head>",
+            "<body>",
+            "" ,
+            "    <canvas id=\"renderCanvas\"></canvas>",
+            "",
+            "    <script src=\"https://cdn.babylonjs.com/babylon.js\"></script> //rendering engine",
+            "    <script src=\"https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js\"></script> //loader for certain filetypes",
+            "    <script src=\"https://code.jquery.com/pep/0.4.3/pep.js\"></script>//for touch controls",
+            "    <script src=\"https://cdn.babylonjs.com/gui/babylon.gui.min.js\"></script>//for GUI",
+            "    <script src=\"/main.js\"></script>//source of main code",
+            "</body>",
+            "</html>"
+
+        ],
+        "description": "Creates boilerplate html",
+        "scope": "html"
+    }
+}
