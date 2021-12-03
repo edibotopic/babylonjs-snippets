@@ -1,6 +1,7 @@
 {
     "name": "babylonjs-snippets",
     "displayName": "Babylon.js Snippets",
+    "publisher": "edibotopic",
     "description": "JavaSscript and HTML snippets for Babylon.js projects.",
     "version": "1.0.0",
     "icon": "images/icon.png",
