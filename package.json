@@ -6,7 +6,8 @@
     "version": "1.0.0",
     "icon": "images/icon.png",
     "galleryBanner": {
-        "theme": "dark"
+        "theme": "dark",
+        "color": "#000000"
     },
     "author": {
         "name": "edibotopic"
