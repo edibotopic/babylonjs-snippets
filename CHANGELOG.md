@@ -9,3 +9,7 @@ All notable changes to the "babylonjs-snippets" extension will be documented in 
 ## Version 1.0.1
 
 - Changed marketplace background for readability
+
+## Version 1.0.2
+
+- Fixed glaring typo
