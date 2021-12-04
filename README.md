@@ -30,15 +30,15 @@ Once a snippet is generated the cursor will be placed at the first *tab stop*. I
 
 All babylon.js projects require an `index.html` that loads the Babylon.js engine and contains a *canvas* element with `id` where the scene will be rendered.
 
-While editing your `index.html` begin typing *html scene* and you should see a snippet to create the necessary boilerplate:
+While editing your `index.html` begin typing *HTML scene* and you should see a snippet to create the necessary boilerplate:
 
 ![Generating HTML](images/html_snip.gif)
 
-The `index.html` references a script `main.js` that can be populated with the *js scene* snippet:
+The `index.html` references a script `main.js` that can be populated with the *JS scene* snippet:
 
 ![Generating JavaScript](images/js_snip.gif)
 
-## Example Steps for Quick Scene Setup
+## Steps for Quick Scene Setup
 
 Open a terminal and enter the following commands (example here is in `Bash` - modify as needed):
 
@@ -46,14 +46,14 @@ Open a terminal and enter the following commands (example here is in `Bash` - mo
 
 mkdir myProject
 cd myProject
-touch main.js && index.html
+touch main.js && touch index.html
 code .
 
 ```
 
-1. After VSCode opens, invoke the `scene` snippet in `main.js`:
+1. After VSCode opens, invoke the `JS scene` snippet in `main.js`:
 
-2. Invoke the `html scene` snippet in `index.html`:
+2. Invoke the `HTML scene` snippet in `index.html`:
 
 3. Save both files and run `index.html` with live server.
 
@@ -69,10 +69,15 @@ The plugin currently doesn't support TypeScript snippets.
 
 ### 1.0.0
 
-Initial release of plugin containing all major snippets from the Babylon.js playground along with the following for creating a default scene:
+Major initial release of plugin containing all major snippets from the Babylon.js playground along with the following for creating a default scene:
 
 - HTML Scene
 - JS Scene
+
+### 1.0.1-1.0.3
+
+- Fixed some typos
+- Marketplace styling
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -87,4 +92,4 @@ I can add more snippets as/if they are suggested.
 - [Babylon.js playground](https://playground.babylonjs.com/)
 - [Video on Babylon.js Playground snippets](https://youtu.be/SRvCe6N7mdE)
 
-**I hope you find this useful**
+**I someone finds this useful!!!**
