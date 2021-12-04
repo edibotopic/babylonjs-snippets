@@ -74,11 +74,16 @@ Major initial release of plugin containing all major snippets from the Babylon.j
 - HTML Scene
 - JS Scene
 
-### 1.0.1-1.0.4
+### 1.0.1-1.0.5
+
+Minor patches:
 
 - Fixed some typos
-- Marketplace styling
+- Marketplace header readability
 - Improved README
+- Added license
+- More consistent naming
+- Added CHANGELOG
 
 -----------------------------------------------------------------------------------------------------------
 
