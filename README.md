@@ -1,8 +1,8 @@
 # Babylon.js Snippets
 
-The browser-based [Babylon.js playground](https://playground.babylonjs.com/) is preconfigured with a set of useful code snippets (or "[templates](https://doc.babylonjs.com/toolsAndResources/tools/playground/pgTemplates)"). This plugin makes these and other snippets available to [Babylon.js](https://www.babylonjs.com/) developers using Visual Studio Code.
+The browser-based [Babylon.js playground](https://playground.babylonjs.com/) is preconfigured with a set of useful code snippets (or "[templates](https://doc.babylonjs.com/toolsAndResources/tools/playground/pgTemplates)"). This plugin makes these and other snippets available to [Babylon.js](https://www.babylonjs.com/) developers using [Visual Studio Code](https://code.visualstudio.com/).
 
-*Babylon.js Snippets* includes all of the snippets from the **playground** along with additional JavaScript and HTML snippets to create and render a default scene with meshes, lights and camera.
+*Babylon.js Snippets* includes all of the snippets from the **playground** along with additional JavaScript and HTML snippets to create and render a default scene with meshes, lights and camera. The snippets are available as a [VSCode plugin](https://marketplace.visualstudio.com/items?itemName=edibotopic.babylonjs-snippets).
 
 ## Features
 
@@ -74,10 +74,11 @@ Major initial release of plugin containing all major snippets from the Babylon.j
 - HTML Scene
 - JS Scene
 
-### 1.0.1-1.0.3
+### 1.0.1-1.0.4
 
 - Fixed some typos
 - Marketplace styling
+- Improved README
 
 -----------------------------------------------------------------------------------------------------------
 
@@ -92,4 +93,4 @@ I can add more snippets as/if they are suggested.
 - [Babylon.js playground](https://playground.babylonjs.com/)
 - [Video on Babylon.js Playground snippets](https://youtu.be/SRvCe6N7mdE)
 
-**I someone finds this useful!!!**
+**I hope someone finds this useful!!!**
