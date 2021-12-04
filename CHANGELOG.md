@@ -13,3 +13,15 @@ All notable changes to the "babylonjs-snippets" extension will be documented in 
 ## Version 1.0.2
 
 - Fixed glaring typo
+
+## Version 1.0.3
+
+- Fixed errors in examples
+
+## Version 1.0.4
+
+- Added VS links to README
+
+## Version 1.0.5
+
+- Updated CHANGELOG
