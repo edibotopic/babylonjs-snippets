@@ -25,3 +25,8 @@ All notable changes to the "babylonjs-snippets" extension will be documented in 
 ## Version 1.0.5
 
 - Updated CHANGELOG
+
+## Version 1.0.6
+
+- Removed comments from *HTML scene* snippet that were in incorrect syntax (JS)
+- Trimmed some fat from snippet descriptions

@@ -85,6 +85,11 @@ Minor patches:
 - More consistent naming
 - Added CHANGELOG
 
+### 1.0.1-1.0.5
+
+- Removed comments with incorrect syntax in *HTML scene* snippet
+- Trimmed some fat in snippet extensions
+
 -----------------------------------------------------------------------------------------------------------
 
 ## Contributing
