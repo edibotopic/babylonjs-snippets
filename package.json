@@ -3,7 +3,7 @@
     "displayName": "Babylon.js Snippets",
     "publisher": "edibotopic",
     "description": "JavaScript and HTML snippets for Babylon.js projects.",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "icon": "images/icon.png",
     "galleryBanner": {
         "theme": "dark",
