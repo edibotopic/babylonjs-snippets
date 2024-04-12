@@ -49,7 +49,7 @@ The `index.html` references a script `main.js` that can be populated with the
 
 ## Steps for Quick Scene Setup
 
-Open a terminal and enter the following commands (example here is in `Bash` - modify as needed):
+Open a terminal and enter the following commands:
 
 ```bash
 
