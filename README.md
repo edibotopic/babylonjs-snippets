@@ -66,7 +66,7 @@ code .
 
 3. Save both files and run `index.html` with live server.
 
-4. You should see the following default scene
+You should see the following default scene:
 
 ![Running default scene in browser](images/serve.gif)
 
