@@ -72,12 +72,12 @@ You should see the following default scene:
 
 ## Release Notes
 
-### 1.0.0
+### 1.1.0
 
-Major initial release of plugin containing all major snippets from the Babylon.js playground along with the following for creating a default scene:
+Minor release with improved TypeScript support.
 
-- HTML Scene
-- JS Scene
+- Snippets common to JavaScript and TypeScript can now be invoked in both filetypes
+- Language-specific snippets are only triggered for that language
 
 ### 1.0.1-1.0.5
 
@@ -90,10 +90,12 @@ Minor patches:
 - More consistent naming
 - Added CHANGELOG
 
-### 1.0.1-1.0.5
+### 1.0.0
 
-- Removed comments with incorrect syntax in *HTML scene* snippet
-- Trimmed some fat in snippet extensions
+Major initial release of plugin containing all major snippets from the Babylon.js playground along with the following for creating a default scene:
+
+- HTML Scene
+- JS Scene
 
 -----------------------------------------------------------------------------------------------------------
 
