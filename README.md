@@ -10,7 +10,9 @@ The browser-based [Babylon.js playground](https://playground.babylonjs.com/) is 
 
 JavaScript snippets can be used while editing a `.js` or `.ts` file.
 
-For example, typing `sphere` or `box` will populate the autosuggestion popup with corresponding snippets, which can be then be selected with <kbd>enter</kbd>. These two example snippets would generate:
+For example, typing `sphere` or `box` will populate the autosuggestion popup
+with corresponding snippets, which can be then be selected with
+<kbd>enter</kbd>. These two example snippets would generate:
 
 ```js
 
@@ -22,19 +24,26 @@ var box = BABYLON.MeshBuilder.CreateBox("box", {size: 1}, scene);
 
 ```
 
-Once a snippet is generated the cursor will be placed at the first *tab stop*. In each of the cases above this will be the *name* of the mesh. After editing the name you can then <kbd>tab</kbd> through the next editable arguments in the sequence.
+Once a snippet is generated the cursor will be placed at the first *tab stop*.
+In each of the cases above this will be the *name* of the mesh. After editing
+the name you can then <kbd>tab</kbd> through the next editable arguments in the
+sequence.
 
 ![Some basic example snippets](images/snippets.gif)
 
 ### HTML Snippets
 
-All babylon.js projects require an `index.html` that loads the Babylon.js engine and contains a *canvas* element with `id` where the scene will be rendered.
+All babylon.js projects require an `index.html` that loads the Babylon.js
+engine and contains a *canvas* element with `id` where the scene will be
+rendered.
 
-While editing your `index.html` begin typing *HTML scene* and you should see a snippet to create the necessary boilerplate:
+While editing your `index.html` begin typing *HTML scene* and you should see a
+snippet to create the necessary boilerplate:
 
 ![Generating HTML](images/html_snip.gif)
 
-The `index.html` references a script `main.js` that can be populated with the *JS scene* snippet:
+The `index.html` references a script `main.js` that can be populated with the
+*JS scene* snippet:
 
 ![Generating JavaScript](images/js_snip.gif)
 
