@@ -31,11 +31,23 @@
         "snippets": [
             {
                 "language": "javascript",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/common/snippets.code-snippets"
+            },
+            {
+                "language": "javascript",
+                "path": "./snippets/js/snippets.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/common/snippets.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/ts/snippets.code-snippets"
             },
             {
                 "language": "html",
-                "path": "./snippets/snippets.code-snippets"
+                "path": "./snippets/html/snippets.code-snippets"
             }
         ]
     }
