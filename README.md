@@ -46,7 +46,7 @@ Open a terminal and enter the following commands (example here is in `Bash` - mo
 
 mkdir myProject
 cd myProject
-touch main.js && touch index.html
+touch main.js index.html
 code .
 
 ```
