@@ -30,3 +30,13 @@ All notable changes to the "babylonjs-snippets" extension will be documented in 
 
 - Removed comments from *HTML scene* snippet that were in incorrect syntax (JS)
 - Trimmed some fat from snippet descriptions
+
+## Version 1.1.0
+
+Minor update of plugin with better TypeScript support.
+
+- Snippets common to JavaScript and TypeScript can now be triggered in `.js` and `.ts` files
+- Snippets specific to a language, such as `HTML scene` are only suggested in that language
+- Snippet code was reorganised into sub-directories in `./snippets/` for better maintainability
+- Minor fixes
+
