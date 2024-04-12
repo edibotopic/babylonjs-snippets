@@ -8,7 +8,7 @@ The browser-based [Babylon.js playground](https://playground.babylonjs.com/) is 
 
 ### JavaScript Snippets
 
-JavaScript snippets can be used while editing a `.js` file or while typing within `<script></script>` tags in a `.html` file.
+JavaScript snippets can be used while editing a `.js` or `.ts` file.
 
 For example, typing `sphere` or `box` will populate the autosuggestion popup with corresponding snippets, which can be then be selected with <kbd>enter</kbd>. These two example snippets would generate:
 
@@ -60,10 +60,6 @@ code .
 4. You should see the following default scene
 
 ![Running default scene in browser](images/serve.gif)
-
-## Known Issues
-
-The plugin currently doesn't support TypeScript snippets.
 
 ## Release Notes
 
